@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border box-sizing;
+      }
+      body {
+        background-color: #f0f0f0;
+        font-family: "Square Peg", cursive;
+      }
+
+      .joke-container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 50px 0 30px;
+      }
+      .joke {
+        border: 1px solid black;
+        background: transparent;
+        border-radius: 15px;
+        padding: 20px 30px;
+        margin: 20px 20px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.5s ease-in;
+      }
+      .joke.active {
+        background-color: #fff;
+        box-shadow: 5px 10px 8px #888888;
+        min-height: 200px;
+      }
+      .joke-title {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+      }
+      .joke-text {
+        display: none;
+        margin: 40px 0;
+      }
+      .joke.active .joke-text {
+        display: block;
+      }
+      i {
+        position: absolute;
+        bottom: 10px;
+        right: 50%;
+      }
+    </style>
+    <title>Questions</title>
+  </head>
+  <body>
+    <h1>WELCOME</h1>
+    <div class="joke-container">
+      <div class="joke active">
+        <h3 class="joke-title">
+          Yazdığı şiirleri son anda beğenmeyen şairimiz kimdir?
+        </h3>
+        <p class="joke-text">Ömer Hayyam</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="joke">
+        <h3 class="joke-title">
+         Hafif üşüyen bir assasin ne der?
+        </h3>
+        <p class="joke-text">Esiyo</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="joke">
+        <h3 class="joke-title">
+         Peynirli böreğini paylaşmak istemediğin oyuncu hangisidir?
+        </h3>
+        <p class="joke-text">This lor of mine</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="joke">
+        <h3 class="joke-title">
+          Harry Potter'ın yiyemediği hamur işi nedir?
+        </h3>
+        <p class="joke-text">Draco Milfoy</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="joke">
+        <h3 class="joke-title">
+          Gözleri kısık King Kong'a ne denir?
+        </h3>
+        <p class="joke-text">Çing Çong</p>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
